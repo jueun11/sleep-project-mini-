@@ -1,0 +1,9 @@
+글씨 크기 index.scss 파일 참고
+
+크기가 바뀌어도 고정적으로 위치를 사용하려면... 안틀어지게 하려면 position: absolute; 사용
+
+  padding-left: 5vw;
+
+전체레이아웃에서 패딩값
+  padding: 10vw;
+
