@@ -1,23 +1,20 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
-h1{
-  font-size: 1.5rem;
-}
+
 
 
 #root{
   width: 100vw;
   height: 100vh;
   padding: 10vw;
-  border: 1px solid black;
+  // border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
 
 #title{
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 section{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 100%;
   height: 75vh;
   margin-top: 5vh;
@@ -25,15 +22,103 @@ section{
   flex-direction: row;
   justify-content: space-between;
   padding-left: 5vw;
+
+
+  &>div:nth-child(1){
+    width: 10vw;
+    // border: 1px solid blue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    &>#line{
+      width: 1px;
+      height: 100%;
+      background-color: var(--color-3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &>div{
+        width: 2vh;
+        height: 2vh;
+        border-radius: 50%;
+        background-color: var(--color-6);
+      }
+      &>div:nth-child(1){
+        position: absolute;
+        top: 25vh;
+      }
+      &>div:nth-child(2){
+        position: absolute;
+        top: 43vh;
+      }
+      &>div:nth-child(3){
+        position: absolute;
+        top: 75vh;
+      }
+    }
+  }
+  &>div:nth-child(2){
+    width: 63vw;
+    //여기부분 크기 늘리면 옆 동그라미사이 간격 줄어듬
+    height: 100%;
+    // border: 1px solid blue;
+    &>div:nth-child(1){
+      position: absolute;
+      top: 24.5vh;
+      // border: 1px solid green;
+      &>div:nth-child(2){
+        margin-top: 2vh;
+        margin-left: 5vw;
+        // border: 1px solid red;
+        &>p:nth-child(1){
+
+        }
+        &>p:nth-child(2){
+          margin-top: 2vh;
+        }
+      }
+    }
+    &>div:nth-child(2){
+      // border: 1px solid green;
+      position: absolute;
+      top: 42.5vh;
+      
+      &>div:nth-child(2){
+        margin-top: 2vh;
+        margin-left: 5vw;
+        // border: 1px solid red;
+
+        &>p:nth-child(1){
+
+        }
+        &>p:nth-child(2){
+          margin-top: 5vh;
+        }
+        &>p:nth-child(3){
+          margin-top: 5vh;
+          
+        }
+      }
+    }
+    &>div:nth-child(3){
+      // border: 1px solid green;
+      position: absolute;
+        top: 74.5vh;
+
+      &>div:nth-child(2){
+        margin-top: 2vh;
+        margin-left: 5vw;
+        // border: 1px solid red;
+
+        &>p:nth-child(1){
+
+        }
+        &>p:nth-child(2){
+          margin-top: 2vh;
+        }
+      }
+    }
+  }
 }
-section > div:nth-child(1){
-  width: 10vw;
-  border: 1px solid blue;
-  height: 100%;
-}
-section > div:nth-child(2){
-  width: 60vw;
-  height: 100%;
-  border: 1px solid blue;
-  
-}
+
+

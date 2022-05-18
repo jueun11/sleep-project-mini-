@@ -1,0 +1,22 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  padding: 10vw;
+}
+#root > section:nth-child(1) {
+  border: 1px solid black;
+}
+#root > section:nth-child(1) > h2 {
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root > section:nth-child(1) > #time {
+  margin-top: 5vh;
+  border: 1px solid blue;
+}
+#root > section:nth-child(2) {
+  margin-top: 5vh;
+  border: 1px solid black;
+}/*# sourceMappingURL=summary.css.map */

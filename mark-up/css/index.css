@@ -1,28 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
 #root {
   width: 100vw;
   height: 100vh;
   padding: 10vw;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
 
-#title {
-  border: 1px solid red;
-}
-
 section {
-  border: 1px solid red;
   width: 100%;
   height: 75vh;
   margin-top: 5vh;
@@ -31,15 +15,75 @@ section {
   justify-content: space-between;
   padding-left: 5vw;
 }
-
 section > div:nth-child(1) {
   width: 10vw;
-  border: 1px solid blue;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+section > div:nth-child(1) > #line {
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section > div:nth-child(1) > #line > div {
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+  background-color: var(--color-6);
+}
+section > div:nth-child(1) > #line > div:nth-child(1) {
+  position: absolute;
+  top: 25vh;
+}
+section > div:nth-child(1) > #line > div:nth-child(2) {
+  position: absolute;
+  top: 43vh;
+}
+section > div:nth-child(1) > #line > div:nth-child(3) {
+  position: absolute;
+  top: 75vh;
+}
+section > div:nth-child(2) {
+  width: 63vw;
   height: 100%;
 }
-
-section > div:nth-child(2) {
-  width: 60vw;
-  height: 100%;
-  border: 1px solid blue;
+section > div:nth-child(2) > div:nth-child(1) {
+  position: absolute;
+  top: 24.5vh;
+}
+section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
+  margin-top: 2vh;
+}
+section > div:nth-child(2) > div:nth-child(2) {
+  position: absolute;
+  top: 42.5vh;
+}
+section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > p:nth-child(2) {
+  margin-top: 5vh;
+}
+section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > p:nth-child(3) {
+  margin-top: 5vh;
+}
+section > div:nth-child(2) > div:nth-child(3) {
+  position: absolute;
+  top: 74.5vh;
+}
+section > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+section > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > p:nth-child(2) {
+  margin-top: 2vh;
 }/*# sourceMappingURL=index.css.map */
