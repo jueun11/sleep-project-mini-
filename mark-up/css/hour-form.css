@@ -1,0 +1,97 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header > h1 {
+  margin-top: 10vw;
+  width: 50vw;
+  display: flex;
+  color: var(--color-4);
+  margin-left: 10vw;
+}
+header > nav {
+  margin-top: 10vw;
+  width: 5vh;
+  height: 5vh;
+  border: 1px solid red;
+  margin-right: 10vw;
+}
+
+main {
+  height: 100%;
+}
+main > section:nth-child(1) {
+  height: 45vh;
+  color: var(--color-5);
+}
+main > section:nth-child(1) > div:nth-child(1) {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+  width: 25vh;
+  height: 25vh;
+  background-color: var(--color-3);
+  border-radius: 50%;
+}
+main > section:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > section:nth-child(1) > div:nth-child(2) > h2 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+main > section:nth-child(2) {
+  height: 100%;
+  border-top: 1px solid var(--color-2);
+}
+main > section:nth-child(2) > h2 {
+  padding-left: 10vw;
+  padding-top: 3vh;
+  color: var(--color-4);
+}
+main > section:nth-child(2) > article {
+  height: 22vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  gap: 2vh;
+  margin-top: 1vh;
+}
+main > section:nth-child(2) > article > div {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main > section:nth-child(2) > article > div > div {
+  width: 7vh;
+  height: 7vh;
+  background-color: var(--color-3);
+  border-radius: 50%;
+}
+main > section:nth-child(2) > article > div > p {
+  font-size: 0.7rem;
+  white-space: nowrap;
+  color: var(--color-5);
+}
+main > section:nth-child(2) > p {
+  padding-left: 10vw;
+  margin-top: 2vh;
+  padding-right: 10vw;
+  color: var(--color-4);
+}/*# sourceMappingURL=hour-form.css.map */
